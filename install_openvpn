@@ -359,7 +359,7 @@ refresh_pattern .               0       20%     4320" > /etc/squid3/squid.conf
 ok "➡ service squid3 restart"
 service squid3 restart -q > /dev/null 2>&1
 
-elif [[ "$VERSION_ID" = 'VERSION_ID="16.04"' || "$VERSION_ID" = 'VERSION_ID="9"' ]]; then
+elif [[ "$VERSION_ID" = 'VERSION_ID="16.04"' || "$VERSION_ID" = 'VERSION_ID="9"' || "$VERSION_ID" = 'VERSION_ID="18.04"' ]]; then
 #install squid3
 ok "➡ apt-get install squid"
 apt-get install -qy squid > /dev/null 2>&1
