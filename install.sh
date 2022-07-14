@@ -80,7 +80,7 @@ echo "        ╭━━━━━━━━━━━━━━━━━━━━━
         ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯   "
     read -p "        ╰━━ ( Y/n ) : " -e -i y Confirn
     if [[ "$Confirn" = "y" || "$Confirn" = "Y" ]]; then
-wget -q -O install "https://raw.githubusercontent.com/tokssa/SAVAT/master/install_openvpn"
+wget -q -O install "https://raw.githubusercontent.com/LiLGun-X/DxS/master/install_openvpn"
 bash install
 exit
 elif [[ "$Confirn" = "n" || "$Confirn" = "N" ]]; then
