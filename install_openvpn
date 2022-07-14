@@ -553,7 +553,7 @@ wget -q -O b-user "https://raw.githubusercontent.com/tokssa/SAVAT/master/b-user"
 
 echo "30 3 * * * root /sbin/reboot" > /etc/cron.d/reboot
 chmod +x speedtest
-chmod +x sa
+chmod +x m
 chmod +x b-user
 service cron restart -q > /dev/null 2>&1
 
