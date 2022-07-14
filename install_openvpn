@@ -424,7 +424,7 @@ sed -i 's/listen = \/var\/run\/php5-fpm.sock/listen = 127.0.0.1:9000/g' /etc/php
 apt-get install -qy php5-curl > /dev/null 2>&1
 ok "➡ service php restart"
 service php5-fpm restart -q > /dev/null 2>&1
-elif [[ "$VERSION_ID" = 'VERSION_ID="9"' || "$VERSION_ID" = 'VERSION_ID="16.04"' ]]; then
+elif [[ "$VERSION_ID" = 'VERSION_ID="9"' || "$VERSION_ID" = 'VERSION_ID="16.04"' || "$VERSION_ID" = 'VERSION_ID="18.04"' ]]; then
 #debian9 Ubuntu16.4
 ok "➡ apt-get install php"
 apt-get install -qy php7.0-fpm > /dev/null 2>&1
@@ -456,9 +456,9 @@ service dropbear restart > /dev/null 2>&1
 country=ID
 state=Thailand
 locality=Tebet
-organization=zenon
+organization=LiLGunX
 organizationalunit=IT
-commonname=www.zenon.tk
+commonname=lilgunx.online
 facebook=EkkachaiChompoowiset
 
 
