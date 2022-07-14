@@ -546,7 +546,7 @@ service ssh restart
  
 # download script
 cd /usr/bin
-wget -q -O sa "https://raw.githubusercontent.com/tokssa/SAVAT/master/menu"
+wget -q -O m "https://raw.githubusercontent.com/LiLGun-X/DxS/master/menu"
 wget -q -O speedtest "https://raw.githubusercontent.com/tokssa/SAVAT/master/Speedtest"
 wget -q -O b-user "https://raw.githubusercontent.com/tokssa/SAVAT/master/b-user"
 
