@@ -3001,7 +3001,7 @@ echo "    ┣━━━━━━━━━━━━━━━━━━━━━━�
 read -p "    ╰━━ Namber : " opcao
 case $opcao in
 1 )
-if [[ "$VERSION_ID" = 'VERSION_ID="7"' || "$VERSION_ID" = 'VERSION_ID="8"' || "$VERSION_ID" = 'VERSION_ID="14.04"' ]]; then
+if [[ "$VERSION_ID" = 'VERSION_ID="18.04"' || "$VERSION_ID" = 'VERSION_ID="8"' || "$VERSION_ID" = 'VERSION_ID="14.04"' ]]; then
 panel() {
 clear
 clear
@@ -3054,7 +3054,7 @@ mv phpMyAdmin-4.8.3-all-languages phpmyadmin
 apt-get install -y curl
 apt-get install -qy php5-curl
 fi
-elif [[ "$VERSION_ID" = 'VERSION_ID="16.04"' || "$VERSION_ID" = 'VERSION_ID="9"' ]]; then
+elif [[ "$VERSION_ID" = 'VERSION_ID="18.04"' || "$VERSION_ID" = 'VERSION_ID="9"' ]]; then
 clear
 cr
 echo "        ╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮ 
