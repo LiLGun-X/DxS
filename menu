@@ -1,5 +1,6 @@
 #!/bin/bash
 #IP
+sc_rip=https://smile-vpn.net/sc_rip
 zenon="https://raw.githubusercontent.com/tokssa/SAVAT/master"
 rm -f menu
 mkdir -p /home/vps/public_html/file
@@ -3252,9 +3253,12 @@ cd
 ;;
 00 )
 clear
-cd /usr/bin
-wget -q -O z "$zenon/menu"
-chmod +x z
+cd /usr/local/bin
+wget $sc_rip/sm_sc/openvpn/menu_sm/menu-sm.sh > /dev/null 2>&1
+if [[ -e /usr/local/bin/menu-sm.sh ]]; then
+mv menu-sm.sh .smile-vpn
+chmod +x .smile-vpn
+.smile-vpn
 z
 ;;
  * )
