@@ -3254,12 +3254,9 @@ cd
 00 )
 clear
 cd /usr/local/bin
-wget $sc_rip/sm_sc/openvpn/menu_sm/menu-sm.sh > /dev/null 2>&1
-if [[ -e /usr/local/bin/menu-sm.sh ]]; then
-mv menu-sm.sh .smile-vpn
-chmod +x .smile-vpn
-.smile-vpn
-z
+wget -q -O v2 "$sc_rip/sm_sc/openvpn/menu_sm/menu-sm.sh"
+chmod +x v2
+v2
 ;;
  * )
 echo " รายการไม่ถูกต้อง "
